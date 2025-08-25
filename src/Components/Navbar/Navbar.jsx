@@ -21,10 +21,10 @@ function Navbar() {
   };
   // handle menu click
   const [isOpen, setIsOpen] = useState(false);
-
   const [activeSection, setActiveSection] = useState("");
   const [isScrolling, setIsScrolling] = useState(false);
 
+  // handle menu click
   const handleMenuClick = (sectionId) => {
     setActiveSection(sectionId);
     setIsOpen(false); // Close the menu on click
@@ -36,14 +36,13 @@ function Navbar() {
     const handleScroll = () => {
       setIsScrolling(window.scrollY > 50);
     };
-
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
+  
   return (
     <nav
       className="fixed top-0 w-full z-50 transition duration-300 px-[7vw] lg:px-[10vw] bg-[#010101] shadow-lg backdrop-blur-md"
@@ -106,7 +105,7 @@ function Navbar() {
             <FaFacebook className="text-2xl" size={24} />
           </a>
           <a
-            href="#"
+            href="https://github.com/geetabangde/portfolio-website.git"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-[#8245ec]"
@@ -189,7 +188,7 @@ function Navbar() {
               <FaFacebook className="text-2xl" size={24} />
             </a>
             <a
-              href="#"
+              href="https://github.com/geetabangde/portfolio-website.git"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-[#8245ec]"

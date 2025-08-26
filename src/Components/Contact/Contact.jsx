@@ -6,12 +6,11 @@ import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
   const form = useRef();
   const [isSent, setIsSent] = useState(false);
-  const [isLoading, setIsLoading] = useState(false); // 👈 Loading state
+  const [isLoading, setIsLoading] = useState(false); 
 
   const sendEmail = (e) => {
     e.preventDefault();
-
-    setIsLoading(true); // Set loading state to true
+    setIsLoading(true); 
 
     emailjs
       .sendForm(
@@ -22,9 +21,9 @@ const Contact = () => {
       )
       .then(
         () => {
-          setIsLoading(false); // Set loading state to false
+          setIsLoading(false); 
           setIsSent(true);
-          form.current.reset(); // Reset form fields after sending
+          form.current.reset(); 
           toast.success("Message sent successfully! ✅", {
             position: "top-right",
             autoClose: 3000,
@@ -157,9 +156,9 @@ const Contact = () => {
           {/* Send Button */}
           <button
             type="submit"
-            disabled={isLoading} // 👈 Disable button during loading
+            disabled={isLoading}
             className={`relative w-full py-3 text-white font-semibold rounded-lg 
-              bg-gradient-to-r from-purple-600 to-pink-400 
+              bg-gradient-to-r from-[#693B93] to-[#8245ec] shadow-lg
               overflow-hidden transition-all duration-500 
               ${
                 isLoading

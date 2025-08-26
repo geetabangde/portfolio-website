@@ -9,12 +9,15 @@ import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import ParticlesBackground from "./Components/ParticlesBackground/ParticlesBackground";
 import BlurBlob from "./Components/BlurBlob";
+import CustomCursor from "./Components/CustomCursor";
 // import useLenis from "./hooks/useLenis";
 
 function App() {
   // useLenis();
   return (
     <>
+      {/* Global Cursor */}
+      <CustomCursor />
       <div className="relative min-h-screen text-white overflow-hidden bg-[#050414]">
         <BlurBlob
           position={{ top: "35%", left: "20%" }}

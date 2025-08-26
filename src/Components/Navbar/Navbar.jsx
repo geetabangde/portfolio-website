@@ -19,19 +19,19 @@ function Navbar() {
     education: { id: "education", label: "Education", href: "#education" },
     contact: { id: "contact", label: "Contact", href: "#contact" },
   };
-  // handle menu click
+  
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("");
   const [isScrolling, setIsScrolling] = useState(false);
 
-  // handle menu click
+  
   const handleMenuClick = (sectionId) => {
     setActiveSection(sectionId);
-    setIsOpen(false); // Close the menu on click
-    setIsScrolling(true); // Set scrolling state to true
+    setIsOpen(false);
+    setIsScrolling(true); 
   };
 
-  // check scroll and change effect
+  
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolling(window.scrollY > 50);

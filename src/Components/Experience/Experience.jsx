@@ -5,7 +5,7 @@ function Experience() {
   return (
     <section
       id="experience"
-      className="py-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-2 relative"
+      className="py-20 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-2 relative"
     >
       {/* Section Title */}
       <div className="text-center mb-16">

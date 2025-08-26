@@ -1,26 +1,69 @@
-
+import { SkillsInfo } from "../../constants";
+import Tilt from "react-parallax-tilt";
 
 function Skills() {
   return (
     <>
-      <section id="skills" className="py-3 px-6ew font-sans mt-10 m:mt-15 ls:mt-32 lg:px-20 font-poppins">
-        <div className="flex flex-col md:flex-row justify-between items-center">
-          <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-white mb-2 leading-tight">
-              My Skills
-            </h2>
-            <ul className="list-disc list-inside text-gray-300">
-              <li>JavaScript</li>
-              <li>React</li>
-              <li>Node.js</li>
-              <li>CSS</li>
-              <li>HTML</li>
-            </ul>
-          </div>
+      <section
+        id="skills"
+        className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] font-sans bg-skills-gradient clip-path-custom"
+      >
+        {/* Section Title */}
+        <div className="text-center mb-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white">SKILLS</h2>
+          <div className="w-24 h-1 bg-[#8245ec] mx-auto mt-2"></div>
+          <p className="text-gray-400 mt-4 text-lg font-semibold">
+            A collection of my technical skills and expertise honed through
+            various projects and experiences
+          </p>
+        </div>
+        {/* Skill Categories */}
+        <div className="flex flex-wrap gap-1 lg:gap-5 py-10 justify-between">
+          {SkillsInfo.map((category) => (
+            <div
+              key={category.title}
+              className="bg-gray-900 backdrop-blur-md px-6 sm:px-10 py-8 sm:py-6 mb-10 w-full sm:w-[48%] rounded-2xl border border-white 
+                  shadow-[0_0_20px_1px_rgba(130,69,236,0.3)]"
+            >
+              <h3 className="text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-blue-400 mb-4 text-center drop-shadow-lg">
+                {category.title}
+              </h3>
+
+              {/* Skill Items - 3 per row on larger screens */}
+              <Tilt
+                key={category.title}
+                tiltMaxAngleX={20}
+                tiltMaxAngleY={20}
+                perspective={1000}
+                scale={1.05}
+                transitionSpeed={1000}
+                gyroscope={true}
+                className="hover:shadow-2xl hover:scale-105 transition-transform duration-500"
+              >
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 w-full">
+                  {category.skills.map((skill) => (
+                    <div
+                      key={skill.name}
+                      className="flex items-center justify-center space-x-2 bg-gray-800/20 hover:bg-purple-700/30 border-2 border-gray-700 hover:border-purple-400 rounded-3xl py-2 px-2 sm:py-2 sm:px-2 text-center transition-all duration-300"
+                    >
+                      <img
+                        src={skill.logo}
+                        alt={`${skill.name} logo`}
+                        className="w-6 h-6 sm:w-8 sm:h-8 transition-transform duration-300 hover:scale-115"
+                      />
+                      <span className="text-xs sm:text-sm text-gray-300">
+                        {skill.name}
+                      </span>
+                    </div>
+                  ))}
+                </div>
+              </Tilt>
+            </div>
+          ))}
         </div>
       </section>
     </>
-  )
+  );
 }
 
-export default Skills
+export default Skills;

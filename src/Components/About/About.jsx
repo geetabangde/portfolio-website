@@ -25,11 +25,13 @@ function About() {
 
             {/* Skills with typing effect */}
             <h3 className="text-lg sm:text-2xl md:text-3xl font-semibold text-white mb-3 flex items-center gap-2">
-              <span className="text-white">
-                I am a <span className="text-purple-400">specialist</span> in:
-              </span>
+              <span className="text-white">I'm a</span>
               <ReactTypingEffect
-                text={["Web Developer", "UI/UX Designer", "Web Designer"]}
+                text={[
+                  "Web Developer",
+                  "UI/UX Designer",
+                  "Full Stack Developer",
+                ]}
                 speed={100}
                 eraseSpeed={80}
                 typingDelay={500}
@@ -43,7 +45,7 @@ function About() {
               />
             </h3>
             {/* About me */}
-            <p className="text-base sm:text-lg text-gray-300 max-w-md leading-relaxed text-wrap">
+            <p className="text-gray-400 mt-4 text-lg font-semibold">
               I am a passionate web developer with experience in building
               dynamic and responsive web applications. I love creating beautiful
               interfaces and seamless user experiences.

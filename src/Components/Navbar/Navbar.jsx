@@ -15,8 +15,8 @@ function Navbar() {
     about: { id: "about", label: "About", href: "#about" },
     skills: { id: "skills", label: "Skills", href: "#skills" },
     experience: { id: "experience", label: "Experience", href: "#experience" },
-    education: { id: "education", label: "Education", href: "#education" },
     projects: { id: "projects", label: "Projects", href: "#projects" },
+    education: { id: "education", label: "Education", href: "#education" },
     contact: { id: "contact", label: "Contact", href: "#contact" },
   };
   // handle menu click

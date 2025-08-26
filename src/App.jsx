@@ -9,10 +9,10 @@ import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import ParticlesBackground from "./Components/ParticlesBackground/ParticlesBackground";
 import BlurBlob from "./Components/BlurBlob";
-import useLenis from "./hooks/useLenis";
+// import useLenis from "./hooks/useLenis";
 
 function App() {
-  useLenis();
+  // useLenis();
   return (
     <>
       <div className="relative min-h-screen text-white overflow-hidden bg-[#050414]">
@@ -27,15 +27,16 @@ function App() {
         <div className="relative z-10">
           <Navbar />
           {/* Hero/About Section */}
-          <section className="h-[90vh] flex flex-col items-center justify-center px-6 md:px-20">
+          <section className="h-[100vh] sm:h-[80vh] md:h-[90vh] flex flex-col items-center justify-center px-6 md:px-20">
             <About />
           </section>
+
           {/* all section */}
-          <div className="p-20 bg-gray-900 text-white">
+          <div className="p-10 bg-[#010101] text-white">
             <Skills />
             <Experience />
-            <Education />
             <Projects />
+            <Education />
             <Contact />
             <Footer />
           </div>

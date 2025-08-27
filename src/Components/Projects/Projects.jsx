@@ -59,6 +59,14 @@ const Projects = () => {
                   </span>
                 ))}
               </div>
+              {/* Extra Fields (Optional small preview) */}
+              {project.year && (
+                <p className="text-xs text-gray-400">📅 {project.year}</p>
+              )}
+              {project.role && (
+                <p className="text-xs text-gray-400">👨‍💻 {project.role}</p>
+              )}
+              
             </div>
           </div>
         ))}

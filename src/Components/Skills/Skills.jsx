@@ -49,7 +49,7 @@ function Skills() {
                       <img
                         src={skill.logo}
                         alt={`${skill.name} logo`}
-                        className="w-6 h-6 sm:w-8 sm:h-8 transition-transform duration-300 hover:scale-115"
+                        className="w-6 h-6 sm:w-9 sm:h-9 transition-transform duration-300 hover:scale-115 p-1"
                       />
                       <span className="text-xs sm:text-sm text-gray-300">
                         {skill.name}

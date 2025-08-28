@@ -33,13 +33,13 @@ function Experience() {
           }`}
         >
           {/* Timeline Circle */}
-          <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 bg-gray-900 border-4 border-purple-600 w-14 h-14 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10 shadow-[0_0_15px_rgba(130,69,236,0.5)] hover:scale-110 transition-transform duration-500">
+          {/* <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 bg-gray-900 border-4 border-purple-600 w-14 h-14 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10 shadow-[0_0_15px_rgba(130,69,236,0.5)] hover:scale-110 transition-transform duration-500">
             <img
               src={experience.img}
               alt={experience.company}
               className="w-full h-full object-cover rounded-full"
             />
-          </div>
+          </div> */}
 
           {/* Content Card */}
           <div

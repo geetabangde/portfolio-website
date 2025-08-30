@@ -6,7 +6,7 @@ const Education = () => {
   return (
     <section
       id="education"
-      className="py-20 pb-20 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-3"
+      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[20vw] relative font-sans"
     >
       {/* Section Title */}
       <div className="text-center mb-16">
@@ -41,19 +41,19 @@ const Education = () => {
               }`}
             >
               {/* Timeline Circle */}
-              <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 bg-gray-400 border-4 border-[#8245ec] w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
+              {/* <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 bg-gray-400 border-4 border-[#8245ec] w-12 h-12 sm:w-16 sm:h-16 rounded-full flex justify-center items-center z-10">
                 <img
                   src={edu.img}
                   alt={edu.school}
                   className="w-3/4 h-3/4 object-contain rounded-full"
                 />
-              </div>
+              </div> */}
 
               {/* Content Section */}
               <div
-                className={`w-full sm:max-w-md p-6 sm:p-8 rounded-2xl border border-purple-500/40 bg-gray-900 backdrop-blur-md shadow-[0_0_20px_1px_rgba(130,69,236,0.3)] hover:shadow-[0_0_30px_rgba(236,72,153,0.7)] hover:border-purple-400 transition-transform duration-500 hover:scale-105 ${
-                  index % 2 === 0 ? "sm:ml-44" : "sm:mr-44"
-                } ml-8`}
+                className={`w-full sm:max-w-md p-6 sm:p-8 rounded-2xl border border-purple-600/40 bg-gray-900/70 backdrop-blur-lg shadow-[0_0_25px_rgba(130,69,236,0.4)] transition-transform duration-500 hover:scale-105 hover:-translate-y-2 ${
+                  index % 2 === 0 ? "sm:ml-0" : "sm:mr-0"
+                } sm:ml-44 sm:mr-44 ml-4`}
               >
                 {/* Flex container for image and text */}
                 <div className="flex items-center space-x-6">

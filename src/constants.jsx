@@ -133,7 +133,6 @@ export const experiences = [
   },
 ];
 
-
 export const education = [
   {
     id: 0,
@@ -220,7 +219,6 @@ export const projects = [
     image: fineduLogo,
     tags: [
       "Laravel",
-
       "MySQL",
       "HTML",
       "CSS",

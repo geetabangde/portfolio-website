@@ -24,7 +24,7 @@ const CustomCursor = () => {
         height: "40px",
         border: "2px solid #693B93",
         borderRadius: "50%",
-        backgroundColor: "#693B93",
+        backgroundColor: "transparent",
         pointerEvents: "none",
         transform: "translate(-50%, -50%)",
         zIndex: 9999,

@@ -53,9 +53,11 @@ function Navbar() {
       <div className="text-white py-5 flex justify-between items-center">
         <div className="flex items-center space-x-3 cursor-pointer">
           {/* Circle Logo */}
-          <div className="bg-white text-[#8245ec] rounded-full w-10 h-10 flex items-center justify-center text-2xl font-extrabold shadow-lg border-2 border-[#8245ec]">
-            GB
-          </div>
+          <a href="#home"> 
+            <div className="bg-white text-[#8245ec] rounded-full w-10 h-10 p-6 flex items-center justify-center text-2xl font-extrabold shadow-lg border-2 border-[#8245ec]">
+              GB
+            </div>
+          </a>
 
           {/* Name with mixed colors */}
           {/* <div className="text-2xl font-extrabold tracking-wide">
@@ -145,7 +147,7 @@ function Navbar() {
       </div>
       {/* mobile item */}
       {isOpen && (
-        <div className="absolute top-25 left-1/2 transform -translate-x-1/2 w-4/5 p-6 md:hidden bg-[#1A0B2E] bg-opacity-50 shadow-lg backdrop-blur-md z-50 rounded-lg">
+        <div className="absolute left-1/2 transform -translate-x-1/2 w-4/5 p-6 md:hidden bg-[#1A0B2E] bg-opacity-50 shadow-lg backdrop-blur-md z-50 rounded-lg">
           <ul>
             {Object.values(menuItems).map((item) => (
               <li

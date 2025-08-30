@@ -35,7 +35,7 @@ function App() {
           </section>
 
           {/* all section */}
-          <div className="p-10 bg-[#010101] text-white">
+          <div className="bg-[#010101] text-white">
             <Skills />
             <Experience />
             <Projects />

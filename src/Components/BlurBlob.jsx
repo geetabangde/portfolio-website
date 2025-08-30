@@ -7,11 +7,10 @@ function BlurBlob({ position, size }) {
     const { width, height } = size;
 
   return (
-      <>
-          <div className="absolute" style={{ top: top, left: left, width: width, height: height, transform: 'translate(-50%, -50%)', filter: 'blur(100px)', zIndex: -1 }}>
-              <div className="bg-[#b3acc1] rounded-full w-full h-full opacity-20 blur-3xl animate-blob"></div>
-          </div>
-          
+    <>
+      <div className="absolute" style={{ top: top, left: left, width: width, height: height, transform: 'translate(-50%, -50%)', filter: 'blur(100px)', zIndex: -1 }}>
+        <div className="bg-[#b3acc1] rounded-full w-full h-full opacity-20 blur-3xl animate-blob"></div>
+      </div>
     </>
   )
 }

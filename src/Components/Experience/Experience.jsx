@@ -5,7 +5,7 @@ function Experience() {
   return (
     <section
       id="experience"
-      className="py-20 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-2 relative"
+      className="py-24 pb-24 px-[12vw] md:px-[7vw] lg:px-[16vw] font-sans bg-skills-gradient clip-path-custom-2 relative"
     >
       {/* Section Title */}
       <div className="text-center mb-16">
@@ -18,7 +18,7 @@ function Experience() {
       </div>
 
       {/* Timeline Line */}
-      <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 h-80 bg-gradient-to-b from-purple-500 via-indigo-700 to-pink-500 shadow-lg"></div>
+      {/* <div className="absolute sm:left-1/2 left-0 transform -translate-x-1/2 sm:-translate-x-0 w-1 h-80 bg-gradient-to-b from-purple-500 via-indigo-700 to-pink-500 shadow-lg"></div> */}
 
       {/* Experience Entries */}
       {experiences.map((experience, index) => (

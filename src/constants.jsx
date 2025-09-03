@@ -54,6 +54,7 @@ import rocketAgarbattiLogo from "./assets/proejct_logo/rocketagrbatti.png";
 import srcaLogo from "./assets/proejct_logo/srca.png";
 import kailtechLogo from "./assets/proejct_logo/kailtech.png";
 import nagardasLogo from "./assets/proejct_logo/nagardas.png";
+import luckyDrawImg from "./assets/proejct_logo/lucky.png";
 
 export const SkillsInfo = [
   {
@@ -521,7 +522,7 @@ export const projects = [
       "Bootstrap / TailwindCSS",
       "REST API",
     ],
-    webapp: "https://scarbluu.com/crm/", 
+    webapp: "https://scarbluu.com/crm/",
     features: [
       "Inward Entry – Capture samples, consignor details, and testing requirements",
       "Outward Entry – Track delivery, status updates, and client reports",
@@ -550,6 +551,45 @@ export const projects = [
         "Logs to track history of entries and status updates",
         "Report tables for generating custom filters",
         "Data integrity with foreign key constraints",
+      ],
+    },
+  },
+
+  {
+    id: 9,
+    title: "Lucky Draw",
+    description:
+      "An interactive Lucky Draw application designed for Indian Paint & Coating Association (IPCA) events. The system engages participants through a simple and elegant interface, where clicking the 'Start' button automatically runs the lucky draw, randomly selects a winner, and displays the prize or gift. Built for seamless event experiences, it ensures transparency, excitement, and ease of use during live sessions.",
+    image: luckyDrawImg,
+    tags: ["HTML5", "JavaScript", "Laravel", "REST API"],
+    webapp: "https://scarbluu.com/lucky/",
+    features: [
+      "One-click Start button to initiate Lucky Draw",
+      "Randomized winner selection logic",
+      "Dynamic prize/gift allocation",
+      "Attractive and event-friendly UI design",
+      "Live display of results for participants",
+      "Reusable for multiple events and organizations",
+    ],
+    role: "Full Stack Developer (React.js, Laravel, MySQL)",
+    techlong: {
+      frontend: ["HTML5","CSS3", "JavaScript"],
+      backend: ["Laravel", "REST API"],
+      database: ["MySQL"],
+      apis: [
+        "Custom API for participant management",
+        "API for randomized winner selection",
+      ],
+    },
+    database: {
+      type: "MySQL",
+      design:
+        "Schema includes participants, events, winners, and prize allocation tables",
+      features: [
+        "Unique entries for participants",
+        "Winner history logs",
+        "Prize distribution tracking",
+        "Ensures fairness with randomized logic",
       ],
     },
   },

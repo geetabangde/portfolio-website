@@ -65,7 +65,7 @@ function About() {
 
             {/* Fancy CV Button */}
             <motion.a
-              href="/path/to/resume.pdf"
+              href="https://drive.google.com/file/d/1ddFhA4YrU53XBVJJuzuzGsrZO1mifpzR/view?usp=sharing" // Update with your CV path
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.1 }}
